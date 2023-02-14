@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+
+    <link rel="stylesheet" href="build/css/normalice.min.css">
+    <link rel="preload" href="build/css/normalice.min.css" as="style">
+
+    <link rel="stylesheet" href="build/css/estilos.min.css">
+    <link rel="preload" href="build/css/estilos.min.css" as="style">
+
+</head>
+<body>
+    
+    <div class="anuncios"></div>
+
+
+    <div class="contenedor">
+        <form class="formulario">
+            <fieldset>
+                <legend>Gastos</legend>
+
+                <label for="titulo">Titulo</label>
+                <input type="text" id="titulo">
+
+                <div class="agregar-contenedor">
+                    <label for="agregar">Nueva categoria</label>
+                    <input type="text" id="agregar">
+
+                    <div class="boton-contenedor">
+                        <div class="boton boton-agregar" id="boton-agregar">+</div>
+                    </div>
+                </div>
+
+                <div class="categorias-contenedor">
+                    <label for="categoria">Categoria</label>
+                    <select id="categoria">
+                    </select>
+                </div>
+
+                <label for="precio">Precio</label>
+                <input type="number" id="precio">
+            </fieldset>
+            <input type="submit" value="Enviar" id="boton-enviar" class="boton boton-enviar">
+        </form>
+
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Titulo</th>
+                    <th>Categoria</th>
+                    <th>Precio</th>
+                    <th>Opciones</th>
+                </tr>
+            </thead>
+            <tbody id="lista"></tbody>
+        </table>
+    </div>
+
+    <script src="build/js/app.js"></script>
+    <script src="build/js/actualizar.js"></script>
+</body>
+</html>
