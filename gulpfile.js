@@ -26,7 +26,7 @@ function js(done) {
     src('src/js/**/*.js')
     .pipe(plumber())
     .pipe(jsmin())
-    // .pipe(rename({suffix: '.min'}))
+    .pipe(rename({suffix: '.min'}))
     .pipe(dest('build/js'))
     done()
 }

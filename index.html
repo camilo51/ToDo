@@ -47,21 +47,36 @@
             <input type="submit" value="Enviar" id="boton-enviar" class="boton boton-enviar">
         </form>
 
-        <table class="tabla">
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Titulo</th>
-                    <th>Categoria</th>
-                    <th>Precio</th>
-                    <th>Opciones</th>
-                </tr>
-            </thead>
-            <tbody id="lista"></tbody>
-        </table>
+        <div>
+            <div class="derecha contenedor">
+                <!-- <form>
+                    <h2>Filtro</h2>
+                    <div class="">
+                        <label for="categoria">Categoria</label>
+                        <select id="categoria" class="filtro-categoria">
+                        </select>
+                    </div>
+                </form> -->
+                <div>
+                    <h2>Gasto: <span id="gasto-total">$0</span></h2>
+                </div>
+            </div>
+
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Titulo</th>
+                        <th>Categoria</th>
+                        <th>Precio</th>
+                        <!-- <th>Opciones</th> -->
+                    </tr>
+                </thead>
+                <tbody id="lista"></tbody>
+            </table>
+        </div>
     </div>
 
-    <script src="build/js/app.js"></script>
-    <script src="build/js/actualizar.js"></script>
+    <script src="build/js/app.min.js"></script>
 </body>
 </html>
